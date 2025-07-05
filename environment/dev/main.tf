@@ -6,7 +6,7 @@ module "azurerm_resource_group" {
 }
 module "azurerm_resource_group1" {
   source              = "../../module/azurerm_resource_group"
-  resource_group_name = "radhe1-rg"
+  resource_group_name = "radhe2-rg"
   location            = "westus"
 
 }
