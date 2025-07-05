@@ -4,6 +4,12 @@ module "azurerm_resource_group" {
   location            = "westus"
 
 }
+module "azurerm_resource_group1" {
+  source              = "../../module/azurerm_resource_group"
+  resource_group_name = "radhe1-rg"
+  location            = "westus"
+
+}
 
 module "azurerm_virtual_network" {
   depends_on    = [module.azurerm_resource_group]
